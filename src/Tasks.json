@@ -1,0 +1,14 @@
+{
+    "tasks": [
+        {
+            "task_id": "1962c5b7-84d0-4847-9b8f-66e82af7ff80",
+            "description": "I'm implementing a cli application",
+            "completed": false
+        },
+        {
+            "task_id": "bb27e929-6897-470a-bdbc-9da27ae38f39",
+            "description": "i'm writing in my journal",
+            "completed": false
+        }
+    ]
+}
