@@ -8,9 +8,12 @@ class Task:
     completed: bool = field(default=False)
 
     def __post_init__(self):
-        assert isinstance(self.task_id, uuid.UUID), f"Task ID must be a UUID!"
-        assert isinstance(self.desc, str), f" Description must be a string!"
-        assert isinstance(self.completed, bool), f"Task completion must be a bool value!"
+        if not isinstance(self.task_id, uuid.UUID):
+            raise TypeError("Task ID must be a UUID!")
+        if not isinstance(self.desc, str):
+            raise TypeError("Description must be a string!")
+        if not isinstance(self.completed, bool):
+            raise TypeError("Task completion must be a bool value!")
 
     def to_dict(self):
         return {
