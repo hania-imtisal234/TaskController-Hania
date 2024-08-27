@@ -17,7 +17,7 @@ class Task:
 
     def to_dict(self):
         return {
-            'task_id': str(self.task_id),  # Convert UUID to string
+            'task_id': str(self.task_id),  
             'description': self.desc,
             'completed': self.completed
         }
